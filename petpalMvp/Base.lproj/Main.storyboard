@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="meusPetsCell" textLabel="V1b-hC-fhf" detailTextLabel="o6E-jw-nrp" rowHeight="57" style="IBUITableViewCellStyleSubtitle" id="KWu-Hp-5CD" customClass="MeusPetsTableViewCell" customModule="petpalMvp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="meusPetsCell" textLabel="V1b-hC-fhf" detailTextLabel="o6E-jw-nrp" rowHeight="57" style="IBUITableViewCellStyleSubtitle" id="KWu-Hp-5CD" customClass="MeusPetsTableViewCell" customModule="petpalMvp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KWu-Hp-5CD" id="yCp-cK-zbi">
@@ -57,7 +57,7 @@
                     <navigationItem key="navigationItem" title="Meus Pets" id="V19-eN-qNl">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZBT-u3-hth">
                             <connections>
-                                <segue destination="725-d5-NCu" kind="show" id="IYA-HM-OUq"/>
+                                <segue destination="725-d5-NCu" kind="show" identifier="AdicionarPetSegue" id="IYA-HM-OUq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -88,7 +88,7 @@
         <!--Adicionar pet-->
         <scene sceneID="Xa7-EU-DfH">
             <objects>
-                <tableViewController id="725-d5-NCu" customClass="AddPetTableViewController" customModule="petpalMvp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Adicionar pet" id="725-d5-NCu" customClass="AddPetTableViewController" customModule="petpalMvp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZId-u9-Yu2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,10 +184,6 @@
                             <outlet property="delegate" destination="725-d5-NCu" id="bJU-3w-H8S"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Adicionar pet" id="fDq-Mc-ZnW">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="oEH-Ds-WZm"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="bdf-Q5-Jat"/>
-                    </navigationItem>
                     <connections>
                         <outlet property="NascimentoPetCadastro" destination="Eqi-Oa-dMf" id="fPT-Or-T6g"/>
                         <outlet property="especiePetCadastro" destination="g9w-2w-ts7" id="N98-Ym-zfA"/>
@@ -244,7 +240,7 @@
             </objects>
             <point key="canvasLocation" x="3849" y="170"/>
         </scene>
-        <!--Nome do Pet-->
+        <!--Pet Detalhes View Controller-->
         <scene sceneID="l2i-O0-XO6">
             <objects>
                 <viewController id="Mxj-5i-VjJ" customClass="PetDetalhesViewController" customModule="petpalMvp" customModuleProvider="target" sceneMemberID="viewController">
@@ -336,9 +332,6 @@
                             <constraint firstItem="Z0q-xP-9bH" firstAttribute="top" secondItem="818-ww-CLn" secondAttribute="bottom" constant="8" id="yQT-Mq-upL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Nome do Pet" id="7V6-oQ-4IH">
-                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="tV2-fS-S0F"/>
-                    </navigationItem>
                     <connections>
                         <outlet property="NascimentoPetUILabel" destination="GUg-V1-wUZ" id="iXM-zJ-MPM"/>
                         <outlet property="PesoPetUILabel" destination="zhq-uk-8iY" id="aI4-cr-LaL"/>
