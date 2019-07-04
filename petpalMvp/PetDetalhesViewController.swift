@@ -10,25 +10,36 @@ import UIKit
 
 class PetDetalhesViewController: UIViewController {
 
-    @IBOutlet weak var nomePetUILabel: UILabel!
+    //@IBOutlet weak var nomePetUILabel: UILabel!
     @IBOutlet weak var RacaPetUILabel: UILabel!
     @IBOutlet weak var NascimentoPetUILabel: UILabel!
     @IBOutlet weak var PesoPetUILabel: UILabel!
-    /*
-    var nome = String()
+    
+    var pets: Pets?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nomePetUILabel = ListaPetsCell.nomePetUILabel
+        
+        //self.nomePetUILabel.text = self.pets?.nomePet
+        self.RacaPetUILabel.text = self.pets?.racaPet
+        self.NascimentoPetUILabel.text = self.pets?.nascimentoPet
+        self.PesoPetUILabel.text = (self.pets?.pesoPet)! + "Kg"
+        
+        title = self.pets?.nomePet
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detalheView = segue.destination as? MeusPetsTableViewCell{
             detalheView.nomePetUILabel = nomePetUILabel
             //detalheView.imagemArtistaDetalhe = UIImage(named: imagemArtista)
         }
-    }*/
-
+    }
+     */
 }
 
 

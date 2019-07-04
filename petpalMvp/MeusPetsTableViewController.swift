@@ -50,7 +50,7 @@ class MeusPetsTableViewController: UITableViewController {
             
             ListaPetsCell.nomePetUILabel.text = lista.nomePet
             ListaPetsCell.racaPetUILabel.text = lista.racaPet
-            ListaPetsCell.imageUI.image = UIImage(named: lista.imagemPet)
+            //ListaPetsCell.imageUI.image = UIImage(named: lista.imagemPet)
             
             return ListaPetsCell
         }
@@ -62,8 +62,9 @@ class MeusPetsTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detalheView = segue.destination as? PetDetalhesViewController{
-            //detalheView.nomePetUILabel.text = lista.nomePet
-            //detalheView.imagemArtistaDetalhe = UIImage(named: imagemArtista)
+            let indexPath = self.tableView.indexPathForSelectedRow
+            let row = indexPath?.row
+            detalheView.pets = ListaPets[row!]
         }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.

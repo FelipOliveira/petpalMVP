@@ -16,6 +16,9 @@
 		3F33DAA822CCCE0800F3255B /* pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33DAA722CCCE0800F3255B /* pets.swift */; };
 		3F33DAAA22CCD23700F3255B /* MeusPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33DAA922CCD23700F3255B /* MeusPetsTableViewCell.swift */; };
 		3F33DAB222CCE37500F3255B /* PetDetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */; };
+		3F5716C422CE223400B973B9 /* AddPetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5716C322CE223400B973B9 /* AddPetTableViewController.swift */; };
+		3F5716C622CE374000B973B9 /* dadosBioPetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5716C522CE374000B973B9 /* dadosBioPetTableViewController.swift */; };
+		3F5716C822CE37C700B973B9 /* dadosBioPetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5716C722CE37C700B973B9 /* dadosBioPetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		3F33DAA722CCCE0800F3255B /* pets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pets.swift; sourceTree = "<group>"; };
 		3F33DAA922CCD23700F3255B /* MeusPetsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusPetsTableViewCell.swift; sourceTree = "<group>"; };
 		3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetDetalhesViewController.swift; sourceTree = "<group>"; };
+		3F5716C322CE223400B973B9 /* AddPetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPetTableViewController.swift; sourceTree = "<group>"; };
+		3F5716C522CE374000B973B9 /* dadosBioPetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dadosBioPetTableViewController.swift; sourceTree = "<group>"; };
+		3F5716C722CE37C700B973B9 /* dadosBioPetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dadosBioPetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,9 @@
 				3F33DA9322CCC7D000F3255B /* AppDelegate.swift */,
 				3F33DA9522CCC7D000F3255B /* ViewController.swift */,
 				3F33DA9722CCC7D000F3255B /* Main.storyboard */,
+				3F5716C722CE37C700B973B9 /* dadosBioPetTableViewCell.swift */,
+				3F5716C522CE374000B973B9 /* dadosBioPetTableViewController.swift */,
+				3F5716C322CE223400B973B9 /* AddPetTableViewController.swift */,
 				3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */,
 				3F33DAA722CCCE0800F3255B /* pets.swift */,
 				3F33DAA522CCCDC100F3255B /* MeusPetsTableViewController.swift */,
@@ -150,8 +159,11 @@
 			files = (
 				3F33DAB222CCE37500F3255B /* PetDetalhesViewController.swift in Sources */,
 				3F33DAAA22CCD23700F3255B /* MeusPetsTableViewCell.swift in Sources */,
+				3F5716C422CE223400B973B9 /* AddPetTableViewController.swift in Sources */,
 				3F33DAA622CCCDC100F3255B /* MeusPetsTableViewController.swift in Sources */,
+				3F5716C622CE374000B973B9 /* dadosBioPetTableViewController.swift in Sources */,
 				3F33DAA822CCCE0800F3255B /* pets.swift in Sources */,
+				3F5716C822CE37C700B973B9 /* dadosBioPetTableViewCell.swift in Sources */,
 				3F33DA9622CCC7D000F3255B /* ViewController.swift in Sources */,
 				3F33DA9422CCC7D000F3255B /* AppDelegate.swift in Sources */,
 			);
@@ -317,6 +329,7 @@
 				3F33DAA422CCC7D000F3255B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
