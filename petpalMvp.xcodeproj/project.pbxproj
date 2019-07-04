@@ -12,6 +12,10 @@
 		3F33DA9922CCC7D000F3255B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F33DA9722CCC7D000F3255B /* Main.storyboard */; };
 		3F33DA9B22CCC7D000F3255B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F33DA9A22CCC7D000F3255B /* Assets.xcassets */; };
 		3F33DA9E22CCC7D000F3255B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F33DA9C22CCC7D000F3255B /* LaunchScreen.storyboard */; };
+		3F33DAA622CCCDC100F3255B /* MeusPetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33DAA522CCCDC100F3255B /* MeusPetsTableViewController.swift */; };
+		3F33DAA822CCCE0800F3255B /* pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33DAA722CCCE0800F3255B /* pets.swift */; };
+		3F33DAAA22CCD23700F3255B /* MeusPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33DAA922CCD23700F3255B /* MeusPetsTableViewCell.swift */; };
+		3F33DAB222CCE37500F3255B /* PetDetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		3F33DA9A22CCC7D000F3255B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F33DA9D22CCC7D000F3255B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F33DA9F22CCC7D000F3255B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F33DAA522CCCDC100F3255B /* MeusPetsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusPetsTableViewController.swift; sourceTree = "<group>"; };
+		3F33DAA722CCCE0800F3255B /* pets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pets.swift; sourceTree = "<group>"; };
+		3F33DAA922CCD23700F3255B /* MeusPetsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusPetsTableViewCell.swift; sourceTree = "<group>"; };
+		3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetDetalhesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				3F33DA9322CCC7D000F3255B /* AppDelegate.swift */,
 				3F33DA9522CCC7D000F3255B /* ViewController.swift */,
 				3F33DA9722CCC7D000F3255B /* Main.storyboard */,
+				3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */,
+				3F33DAA722CCCE0800F3255B /* pets.swift */,
+				3F33DAA522CCCDC100F3255B /* MeusPetsTableViewController.swift */,
+				3F33DAA922CCD23700F3255B /* MeusPetsTableViewCell.swift */,
 				3F33DA9A22CCC7D000F3255B /* Assets.xcassets */,
 				3F33DA9C22CCC7D000F3255B /* LaunchScreen.storyboard */,
 				3F33DA9F22CCC7D000F3255B /* Info.plist */,
@@ -136,6 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F33DAB222CCE37500F3255B /* PetDetalhesViewController.swift in Sources */,
+				3F33DAAA22CCD23700F3255B /* MeusPetsTableViewCell.swift in Sources */,
+				3F33DAA622CCCDC100F3255B /* MeusPetsTableViewController.swift in Sources */,
+				3F33DAA822CCCE0800F3255B /* pets.swift in Sources */,
 				3F33DA9622CCC7D000F3255B /* ViewController.swift in Sources */,
 				3F33DA9422CCC7D000F3255B /* AppDelegate.swift in Sources */,
 			);
