@@ -32,14 +32,13 @@ class PetDetalhesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    /*
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let detalheView = segue.destination as? MeusPetsTableViewCell{
-            detalheView.nomePetUILabel = nomePetUILabel
-            //detalheView.imagemArtistaDetalhe = UIImage(named: imagemArtista)
+        if let detalheView = segue.destination as? SensorViewController{
+            detalheView.pets = pets
         }
+    
     }
-     */
+
+
 }
-
-
