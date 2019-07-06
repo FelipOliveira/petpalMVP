@@ -591,6 +591,9 @@
                     </view>
                     <connections>
                         <outlet property="bpmUILabel" destination="40N-yJ-Ufw" id="4uL-30-YG0"/>
+                        <outlet property="valorMaximoUILabel" destination="t6f-Xf-CBx" id="3wo-Qj-k1L"/>
+                        <outlet property="valorMedioUILabel" destination="TgT-BG-xqU" id="6TF-9L-2CA"/>
+                        <outlet property="valorMinimoUILabel" destination="2zf-Aa-UMQ" id="H3e-Px-4bE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4f-gT-G8f" userLabel="First Responder" sceneMemberID="firstResponder"/>

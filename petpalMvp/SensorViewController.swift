@@ -13,6 +13,9 @@ class SensorViewController: UIViewController {
     var pets:Pets?
     
     @IBOutlet weak var bpmUILabel: UILabel!
+    @IBOutlet weak var valorMinimoUILabel: UILabel!
+    @IBOutlet weak var valorMaximoUILabel: UILabel!
+    @IBOutlet weak var valorMedioUILabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
