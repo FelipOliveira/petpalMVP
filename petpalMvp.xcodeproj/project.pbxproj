@@ -18,6 +18,7 @@
 		3F33DAB222CCE37500F3255B /* PetDetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */; };
 		3F576ABC22CF867D00400E7A /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F576ABB22CF867D00400E7A /* SensorViewController.swift */; };
 		3F576ABE22CF8C4500400E7A /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F576ABD22CF8C4500400E7A /* AddPetViewController.swift */; };
+		3F8F2D3522D0C9F80044C6C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F2D3422D0C9F80044C6C1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetDetalhesViewController.swift; sourceTree = "<group>"; };
 		3F576ABB22CF867D00400E7A /* SensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
 		3F576ABD22CF8C4500400E7A /* AddPetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPetViewController.swift; path = ../AddPetViewController.swift; sourceTree = "<group>"; };
+		3F8F2D3422D0C9F80044C6C1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				3F33DA9322CCC7D000F3255B /* AppDelegate.swift */,
 				3F33DA9522CCC7D000F3255B /* ViewController.swift */,
 				3F33DA9722CCC7D000F3255B /* Main.storyboard */,
+				3F8F2D3422D0C9F80044C6C1 /* LoginViewController.swift */,
 				3F576ABB22CF867D00400E7A /* SensorViewController.swift */,
 				3F33DAB122CCE37500F3255B /* PetDetalhesViewController.swift */,
 				3F33DAA722CCCE0800F3255B /* pets.swift */,
@@ -114,6 +117,7 @@
 				TargetAttributes = {
 					3F33DA8F22CCC7D000F3255B = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W8ZLQ3B968;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8F2D3522D0C9F80044C6C1 /* LoginViewController.swift in Sources */,
 				3F576ABC22CF867D00400E7A /* SensorViewController.swift in Sources */,
 				3F33DAB222CCE37500F3255B /* PetDetalhesViewController.swift in Sources */,
 				3F33DAAA22CCD23700F3255B /* MeusPetsTableViewCell.swift in Sources */,
@@ -286,7 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W8ZLQ3B968;
 				INFOPLIST_FILE = petpalMvp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackatruck.petpalMvp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,7 +305,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W8ZLQ3B968;
 				INFOPLIST_FILE = petpalMvp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackatruck.petpalMvp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

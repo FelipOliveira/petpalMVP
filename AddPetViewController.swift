@@ -10,6 +10,14 @@ import UIKit
 
 class AddPetViewController: UIViewController {
 
+    // MARK: - Properties
+    var novoPet: Pets?
+
+    @IBOutlet weak var nomePetCadastro: UITextField!
+    @IBOutlet weak var especiePetCadastro: UITextField!
+    @IBOutlet weak var nascimentoPetCadastro: UITextField!
+    @IBOutlet weak var pesoPetCadastro: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,15 +38,17 @@ class AddPetViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)  {
+        let nomePet = nomePetCadastro.text
+        let especiePet = especiePetCadastro.text
+        let nascimentoPet = nascimentoPetCadastro.text
+        let pesoPet = pesoPetCadastro.text
+        if segue.identifier == "AddNovoPet" {
+            //novoPet = Pets(nomePet: nomePetCadastro, racaPet: especiePetCadastro, nascimentoPet: nascimentoPetCadastro, pesoPet: pesoPetCadastro, imagemPet: "")
+        }
     }
-    */
+
     
     //Calls this function when the tap is recognized.
     @objc func dismissKeyboard() {
@@ -46,4 +56,13 @@ class AddPetViewController: UIViewController {
         view.endEditing(true)
     }
 
+}
+
+extension AddPetViewController {
+    
+    @IBAction func cancelToPlayersViewController(_ segue: UIStoryboardSegue) {
+    }
+    
+    @IBAction func savePlayerDetail(_ segue: UIStoryboardSegue) {
+    }
 }

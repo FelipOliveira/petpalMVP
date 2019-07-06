@@ -12,10 +12,12 @@ class SensorViewController: UIViewController {
 
     var pets:Pets?
     
+    @IBOutlet weak var bpmUILabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title=self.pets?.nomePet
+        title="Coração do "+(self.pets?.nomePet)!
         // Do any additional setup after loading the view.
     }
 
