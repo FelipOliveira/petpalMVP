@@ -17,6 +17,12 @@ class PetDetalhesViewController: UIViewController {
     
     var pets: Pets?
     
+    func updateBPM () {
+        getBpmReadings(toRead: 0) { (reading) in
+            self.BPMUIButton.setTitle(String(describing: reading.bpm[0]), for: UIControlState.normal)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +30,10 @@ class PetDetalhesViewController: UIViewController {
         self.RacaPetUILabel.text = self.pets?.racaPet
         self.NascimentoPetUILabel.text = self.pets?.nascimentoPet
         self.PesoPetUILabel.text = (self.pets?.pesoPet)! + "Kg"
+        
+        let timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(updateBPM), userInfo: nil, repeats: true)
+        
+        updateBPM()
         
         title = self.pets?.nomePet
     }
