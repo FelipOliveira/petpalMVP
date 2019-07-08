@@ -247,6 +247,7 @@
                                     <color key="titleColor" red="0.97586361319023296" green="1" blue="0.97426888945557122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="EntrarButton:" destination="hDp-id-KGR" eventType="touchUpInside" id="TG0-e7-aOM"/>
                                     <segue destination="3Jl-F6-wDz" kind="show" id="5ti-Gk-71K"/>
                                 </connections>
                             </button>
@@ -287,6 +288,8 @@
                     <navigationItem key="navigationItem" title="Pet Pal" id="mVd-e3-UAp"/>
                     <connections>
                         <outlet property="logoUI" destination="VNd-42-MIr" id="iuD-ZI-hg9"/>
+                        <outlet property="nomeUserUI" destination="cqL-aQ-FeC" id="IzF-8B-aq5"/>
+                        <outlet property="senhaUserUI" destination="Txq-GQ-noL" id="wMU-6f-24a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0E-qQ-Qiw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -296,7 +299,7 @@
         <!--Adicionar Usuário-->
         <scene sceneID="SqO-va-GuE">
             <objects>
-                <viewController title="Adicionar Usuário" id="9l5-An-bvZ" sceneMemberID="viewController">
+                <viewController title="Adicionar Usuário" id="9l5-An-bvZ" customClass="AddUserViewController" customModule="petpalMvp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uu4-MJ-8Ht"/>
                         <viewControllerLayoutGuide type="bottom" id="r1m-q1-C4p"/>
@@ -368,12 +371,21 @@
                                 <state key="normal" title="Pronto">
                                     <color key="titleColor" red="0.98405528311227231" green="0.99904590845108032" blue="0.98717140163726103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="NovoUserButton:" destination="9l5-An-bvZ" eventType="touchUpInside" id="SwA-TA-Og4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addEmailUser" destination="ll7-Dz-rdw" id="p6p-XH-aOb"/>
+                        <outlet property="addNomeUser" destination="MB3-s2-apN" id="taU-df-cuJ"/>
+                        <outlet property="addSenhaUser" destination="ywv-bo-ecK" id="SSB-It-T59"/>
+                        <outlet property="repeteAddSenhaUser" destination="FTq-XQ-vzb" id="fTG-z0-JkW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTK-yZ-J9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

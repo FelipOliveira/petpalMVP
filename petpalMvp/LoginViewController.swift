@@ -10,9 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    //@IBOutlet weak var appIcom: UIImageView!
     @IBOutlet weak var logoUI: UIImageView!
+    @IBOutlet weak var senhaUserUI: UITextField!
+    @IBOutlet weak var nomeUserUI: UITextField!
     
+    @IBAction func EntrarButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -22,8 +25,19 @@ class LoginViewController: UIViewController {
         logoUI.layer.cornerRadius = logoUI.frame.height/2
         logoUI.clipsToBounds = true
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddPetViewController.dismissKeyboard))
         
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
+    }
+    
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
