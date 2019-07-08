@@ -22,36 +22,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vg4-ON-jpl">
-                                <rect key="frame" x="121" y="145" width="133" height="130"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog-paw" translatesAutoresizingMaskIntoConstraints="NO" id="aF8-Dg-1BX">
-                                        <rect key="frame" x="0.0" y="0.0" width="133" height="130"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="130" id="Vrp-fF-Wdn"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PetPal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1u-te-X8D">
-                                <rect key="frame" x="121" y="425" width="133" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="TTE-qG-mAq"/>
-                                    <constraint firstAttribute="width" constant="133" id="t5w-Ec-Qba"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="aF8-Dg-1BX">
+                                <rect key="frame" x="112" y="258" width="150" height="150"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.16612740123437986" green="0.79639712788567474" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.28750621837756446" green="0.80314018766864237" blue="0.99904590849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n1u-te-X8D" firstAttribute="top" secondItem="Vg4-ON-jpl" secondAttribute="bottom" constant="150" id="3n4-4t-J2p"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Vg4-ON-jpl" secondAttribute="trailing" constant="105" id="9EA-n9-cwm"/>
-                            <constraint firstItem="Vg4-ON-jpl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="105" id="Dkd-2I-wme"/>
-                            <constraint firstItem="Vg4-ON-jpl" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="125" id="Z9A-uW-Ofd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="n1u-te-X8D" secondAttribute="trailing" constant="105" id="a3T-Zy-rCZ"/>
-                            <constraint firstItem="n1u-te-X8D" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="105" id="ujk-pl-uqn"/>
+                            <constraint firstItem="aF8-Dg-1BX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Yeu-Mh-bdm"/>
+                            <constraint firstItem="aF8-Dg-1BX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="96" id="gPf-aI-SUz"/>
+                            <constraint firstItem="aF8-Dg-1BX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jFO-Lm-ket"/>
+                            <constraint firstItem="aF8-Dg-1BX" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="238" id="rcy-cH-T4L"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -61,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dog-paw" width="512" height="512"/>
+        <image name="bitmap" width="325" height="265"/>
     </resources>
 </document>

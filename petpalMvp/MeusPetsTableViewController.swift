@@ -16,12 +16,6 @@ class MeusPetsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         ListaPets = PetsDAO.getPets()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,9 +42,9 @@ class MeusPetsTableViewController: UITableViewController {
         if let ListaPetsCell = cell as? MeusPetsTableViewCell{
             let lista = ListaPets[indexPath.row]
             
-            ListaPetsCell.nomePetUILabel.text = lista.nomePet
-            ListaPetsCell.racaPetUILabel.text = lista.racaPet
-            //ListaPetsCell.imageUI.image = UIImage(named: lista.imagemPet)
+            ListaPetsCell.NomeUILabel.text = lista.nomePet
+            ListaPetsCell.especieUILabel.text = lista.racaPet
+            ListaPetsCell.imagePetUI.image = UIImage(named: lista.imagemPet)
             
             return ListaPetsCell
         }

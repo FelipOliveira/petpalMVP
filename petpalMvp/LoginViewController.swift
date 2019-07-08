@@ -10,15 +10,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var appIcom: UIImageView!
+    //@IBOutlet weak var appIcom: UIImageView!
+    @IBOutlet weak var logoUI: UIImageView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        //appIcom.layer.borderWidth = 1
-        appIcom.layer.masksToBounds = false
-        appIcom.layer.borderColor = UIColor.black.cgColor
-        appIcom.layer.cornerRadius = appIcom.frame.height/2
-        appIcom.clipsToBounds = true
+        logoUI.layer.borderWidth = 1
+        logoUI.layer.masksToBounds = false
+        logoUI.layer.borderColor = UIColor.black.cgColor
+        logoUI.layer.cornerRadius = logoUI.frame.height/2
+        logoUI.clipsToBounds = true
         
         
         // Do any additional setup after loading the view.

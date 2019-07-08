@@ -10,10 +10,11 @@ import UIKit
 
 class MeusPetsTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var nomePetUILabel: UILabel!
-    @IBOutlet weak var racaPetUILabel: UILabel!
-    
+    @IBOutlet weak var NomeUILabel: UILabel!
 
+    @IBOutlet weak var especieUILabel: UILabel!
+    
+    @IBOutlet weak var imagePetUI: UIImageView!
     
 
 }
